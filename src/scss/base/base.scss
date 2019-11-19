@@ -1,0 +1,24 @@
+// основные базовые стили страницы
+
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+  
+html {
+  box-sizing: border-box;
+  height: 100%; 
+  font-family: 'Work Sans', sans-serif;
+}
+
+// font-family: 'Anton', sans-serif;
+// font-family: 'Work Sans', sans-serif;
+
+.logo {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+}
