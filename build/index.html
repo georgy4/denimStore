@@ -10,21 +10,24 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="header-top">
-        <p class="logo main-header__logo logo--black"> Nimes</p>
-      </div>
+      <div class="header-top"><a class="logo main-header__logo logo--black" href="">Nimes</a></div>
       <div class="header-bottom">
+        <div class="search-wrapper">
+          <input class="input-search header-bottom__input-search" type="search" name="Search field" placeholder="Search.."/>
+        </div>
         <div class="container">
           <div class="header-bottom__inner">
             <nav class="header-bottom__nav header-navigation">
               <ul class="header-navigation__list">
-                <li class="header-navigation__list-item"><a class="header-navigation__anchor" href="">Woman</a><a class="header-navigation__anchor" href="">Man</a><a class="header-navigation__anchor" href="">New</a></li>
+                <li class="header-navigation__list-item"><a class="header-navigation__anchor" href="">Woman</a></li>
+                <li class="header-navigation__list-item"><a class="header-navigation__anchor" href="">Man</a></li>
+                <li class="header-navigation__list-item"><a class="header-navigation__anchor" href="">New</a></li>
               </ul>
               <div class="header-navigation__right">
-                <div class="search header-navigation__search"></div>
-                <div class="cart header-navigation__cart"></div>
+                <button class="search header-navigation__search" type="button" aria-label="search" onclick="document.querySelector('.input-search').focus()"></button>
+                <button class="cart header-navigation__cart" type="button" aria-label="cart"></button>
               </div>
-              <div class="header-navigation__to-bottom"></div>
+              <button class="header-navigation__to-bottom to-bottom" type="button" aria-label="to bottom"></button>
               <ul class="header-navigation__socials">
                 <li class="header-navigation__social-item"><a class="header-navigation__social-link" href="">facebook</a></li>
                 <li class="header-navigation__social-item"><a class="header-navigation__social-link" href="">instagram</a></li>
@@ -32,10 +35,10 @@
             </nav>
             <div class="base-info">
               <p class="base-info__tagline">The quality you deserve</p>
-              <p class="base-info__name">DENIM</p>
+              <p class="base-info__collection-name">DENIM</p>
               <button class="button base-info__button" type="button">Check new collection</button>
             </div>
-            <div class="img-container header-bottom__img-container"><img class="img-container__top-img" src="" alt=""/><img class="img-container__bottom-img" src="" alt=""/><img class="img-container__main-img" src="" alt=""/></div>
+            <div class="img-container header-bottom__img-container"><img class="img-container__top-img" src="img/icons/to_right.svg" alt=""/><img class="img-container__bottom-img" src="img/icons/to_left.svg" alt=""/><img class="img-container__main-img" src="img/matheus-ferrero-G1T-uv4n31U-unsplash.jpg" width="430" height="517" alt="collection cover"/></div>
           </div>
         </div>
       </div>
