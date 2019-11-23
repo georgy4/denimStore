@@ -14,8 +14,7 @@
 }
 
 .main-header__logo {
-  flex-grow: 1;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .logo--black {
@@ -107,7 +106,7 @@
   color: $black;
   padding: 5px 0;
   &:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid $black;
   }
 }
 
@@ -119,7 +118,7 @@
   color: $black;
   padding: 5px 0;
   &:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid $black;
   }
 }
 
@@ -142,12 +141,12 @@
 }
 
 .header-bottom__img-container {
-  display: flex;
-  justify-content: flex-start;
+  width: 35%;
 }
 
 .img-container {
   position: relative;
+  display: flex;
 }
 
 .img-container__top-img {
@@ -164,6 +163,8 @@
 
 .img-container__main-img {
   z-index: 2;
+  width: 100%;
+  height: auto;
 }
 
 .base-info {
@@ -177,7 +178,7 @@
   padding: 0 100px 0 180px;
 }
 
-.base-info__tagline {
+.short-description {
   font-size: 18px;
   color: $grey;
 }

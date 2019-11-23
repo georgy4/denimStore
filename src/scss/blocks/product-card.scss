@@ -1,0 +1,38 @@
+.product-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-list__list-item {
+  width: calc(100%/4 - 15px);
+  margin-right: 10px;
+  margin-top: 50px;
+  height: auto;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+  &:hover {
+    filter: saturate(1.9);
+  }
+}
+
+.product-list__img {
+  width: 100%;
+  display: block;
+}
+
+.item-name {
+  padding: 25px 0 0 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: $black;
+}
+
+.item-price {
+  font-weight: 900;
+  padding-top: 15px;
+  font-size: 16px;
+  color: $black;
+}

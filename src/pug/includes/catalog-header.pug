@@ -1,0 +1,36 @@
+header.catalog-header
+  .header-top
+    .container
+      nav.header-top-navigation
+        ul.header-top-navigation__list
+          li.header-top-navigation__list-item
+            a.header-top-navigation__anchor(href="catalog.html") Woman
+          li.header-top-navigation__list-item
+            a.header-top-navigation__anchor(href="") Man
+          li.header-top-navigation__list-item
+            a.header-top-navigation__anchor(href="") New
+        a(href="").logo.logo--black.header-top-navigation__logo Nîmes
+        .header-top-navigation__right
+          button(type="button" aria-label="search" 
+          onclick="document.querySelector('.input-search').focus()").search.header-top-navigation__search
+          button(type="button" aria-label="cart").cart.header-top-navigation__cart
+  .header-bottom
+    .search-wrapper
+        input(type="search", name="Search field" placeholder="Search..").input-search.header-bottom__input-search
+    .container
+      .header-bottom__inner--no-padding
+        .header-bottom__left
+          .breadcrumb-wrapper.header-bottom__breadcrumb
+            ul.breadcrumb-list
+              li.breadcrumb-list__item 
+                a(href="index.html").breadcrumb-list__anchor All categories  
+                span.separator  /   
+              li.breadcrumb-list__item  
+                a(href="#").breadcrumb-list__anchor Woman
+                span.separator  /   
+              li.breadcrumb-list__item--active Jackets
+          .short-title Denim Collection Fall 2019
+        .img-container.header-bottom__img-container
+          img.img-container__top-img--no-bulge(src="img/icons/to_right.svg", alt="")
+          img.img-container__bottom-img--no-bulge(src="img/icons/to_left.svg", alt="")
+          img.img-container__main-img(src="img/catalog-header.jpg", width=299 height=260 alt="collection cover")
