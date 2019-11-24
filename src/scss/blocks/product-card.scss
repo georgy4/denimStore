@@ -13,24 +13,26 @@
   &:nth-child(4n) {
     margin-right: 0;
   }
-  &:hover {
-    filter: saturate(1.9);
-  }
 }
 
-.product-list__img {
+.product-item:hover .product-item__img {
+  filter: saturate(1.9);
+}
+
+.product-item__img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
-.item-name {
+.product-item__name {
   padding: 25px 0 0 0;
   font-weight: 500;
   font-size: 18px;
   color: $black;
 }
 
-.item-price {
+.product-item__price {
   font-weight: 900;
   padding-top: 15px;
   font-size: 16px;

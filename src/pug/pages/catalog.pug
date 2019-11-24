@@ -3,7 +3,9 @@ extends ../layouts/layout
 block variables
   -var title = 'Catalog'
 block content
+  include ../includes/filter.pug
   include ../includes/catalog-header.pug
   main.page-main
     .container
+      include ../includes/products.pug
   include ../includes/footer.pug
