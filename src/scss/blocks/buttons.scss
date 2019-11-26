@@ -6,6 +6,8 @@
   background-color: $black;
   border: none;
   border-radius: 0;
+  -webkit-appearance:none;
+
 
   font-weight: bold;
   font-size: 16px;
@@ -16,5 +18,18 @@
   }
   &:active {
     transform: scale(0.98);
+  }
+}
+
+// button clear
+ 
+.button-clear {
+  height: 64px;
+  font-size: 14px;
+  color: $black;
+  -webkit-appearance: none;
+  border: none;
+  &:active {
+    background-color: $background-grey;
   }
 }

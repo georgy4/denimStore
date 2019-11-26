@@ -1,0 +1,145 @@
+.filter-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+  height: 48px;
+}
+
+.filter {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+
+  width: 243px;
+
+  border: 2px solid $black;
+  background: white;
+}
+
+.filter__item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 2px solid $background-grey;
+  &:nth-child(2) {
+    border-top: 2px solid $black;
+  }
+  &:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+.filter__button--no-bg {
+  width: 100%;
+  height: 48px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+  -webkit-appearance: none;
+  border: none;
+  background-color: white;
+}
+
+.filter__button-angle {
+  width: 16px;
+  height: 8px;
+  margin: auto 0;
+  background: url("../img/icons/arrowDown.svg") no-repeat center;
+  background-size: cover;
+}
+
+.filter__button-text {
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 14px;
+  color: $black;
+}
+
+// slider
+.filter__slider {
+  width: 207px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  margin-top: 16px;
+}
+
+// colors
+.filter__colors {
+  width: 207px;
+  margin: 10px auto 25px auto;
+}
+
+.colors-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.colors-list__item {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid white;
+  &:nth-child(1) {
+    background-color: #B0C3C7;
+  }
+  &:nth-child(2) {
+    background-color: #3B6392;
+  }
+  &:nth-child(3) {
+    background-color: #BFC3C8;
+  }
+  &:nth-child(4) {
+    background-color: #2D2E2E;
+  }
+  &:nth-child(5) {
+    background-color: #ECECEC;
+  }
+  &:nth-child(6) {
+    background-color: #4193DA;
+  }
+}
+
+.colors-list__item--active {
+  box-shadow: 0 0 0 1px #B0C3C7;
+}
+
+// collection
+
+.collection-style {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter__collection-style {
+  width: 70%;
+  margin-left: 18px;
+  margin-bottom: 15px;
+}
+
+.collection-style__item {
+  width: 50%;
+  margin: 10px 0;
+}
+
+.collection-style__anchor {
+  font-size: 14px;
+  color: $grey;
+}
+
+.collection-style__anchor--active {
+  color: $black;
+}
+
+// button apply
+.filter__button-apply {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.filter__button-clear {
+  width: 100%;
+}

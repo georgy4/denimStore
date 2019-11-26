@@ -1,0 +1,45 @@
+.filter-wrapper
+
+  ul(tabindex=0).filter 
+    button.filter__button--no-bg.filter__button-top
+      p.filter__button-text  Filter by
+      .filter__button-angle
+
+    li.filter__item 
+      button.filter__button--no-bg  
+        p.filter__button-text Price
+        .filter__button-angle
+
+      //- nouislider plugin
+      .filter__item-inner.filter__slider
+        #slider-tooltips
+
+    li.filter__item
+      button.filter__button--no-bg
+        p.filter__button-text  Color
+        .filter__button-angle
+      .filter__item-inner
+        ul.colors-list.filter__colors
+          li.colors-list__item.colors-list__item--active
+          li.colors-list__item
+          li.colors-list__item
+          li.colors-list__item
+          li.colors-list__item
+          li.colors-list__item
+    li.filter__item 
+      button.filter__button--no-bg  
+        p.filter__button-text  Collection
+        .filter__button-angle
+      .filter__item-inner
+        ul.collection-style.filter__collection-style
+          li.collection-style__item
+            a.collection-style__anchor(href="") Casual
+          li.collection-style__item
+            a.collection-style__anchor(href="") Petite
+          li.collection-style__item
+            a.collection-style__anchor.collection-style__anchor--active(href="") Classic
+          li.collection-style__item
+            a.collection-style__anchor(href="") Soulluxe
+
+    button.button.filter__button-apply Apply(9 Products)
+    button.filter__button-clear.button-clear Clear all
