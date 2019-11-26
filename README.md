@@ -1,4 +1,7 @@
-Установить зависимости:
+Install dependencies:
+
     npm i
-Запустить сервер:
+    
+Run server:
+
     gulp
