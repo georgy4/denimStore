@@ -1,7 +1,7 @@
 .filter-wrapper
 
   ul(tabindex=0).filter 
-    button.filter__button--no-bg.filter__button-top
+    button(tabindex=-1).filter__button--no-bg.filter__button-top
       p.filter__button-text  Filter by
       .filter__button-angle
 
@@ -20,12 +20,12 @@
         .filter__button-angle
       .filter__item-inner
         ul.colors-list.filter__colors
-          li.colors-list__item.colors-list__item--active
-          li.colors-list__item
-          li.colors-list__item
-          li.colors-list__item
-          li.colors-list__item
-          li.colors-list__item
+          li(tabindex=0).colors-list__item.colors-list__item--active
+          li(tabindex=0).colors-list__item
+          li(tabindex=0).colors-list__item
+          li(tabindex=0).colors-list__item
+          li(tabindex=0).colors-list__item
+          li(tabindex=0).colors-list__item
     li.filter__item 
       button.filter__button--no-bg  
         p.filter__button-text  Collection

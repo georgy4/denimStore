@@ -101,6 +101,9 @@
   &:nth-child(6) {
     background-color: #4193DA;
   }
+  &:hover {
+    box-shadow: 0 0 0 1px #B0C3C7;
+  }
 }
 
 .colors-list__item--active {
@@ -142,4 +145,5 @@
 
 .filter__button-clear {
   width: 100%;
+  background: white;
 }

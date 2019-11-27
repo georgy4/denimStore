@@ -1,19 +1,5 @@
-header.catalog-header
-  .header-top
-    .container
-      nav.header-top-navigation
-        ul.header-top-navigation__list
-          li.header-top-navigation__list-item
-            a.header-top-navigation__anchor(href="catalog.html") Woman
-          li.header-top-navigation__list-item
-            a.header-top-navigation__anchor(href="") Man
-          li.header-top-navigation__list-item
-            a.header-top-navigation__anchor(href="") New
-        a(href="").logo.logo--black.header-top-navigation__logo Nîmes
-        .header-top-navigation__right
-          button(type="button" aria-label="search" 
-          onclick="document.querySelector('.input-search').focus()").search.header-top-navigation__search
-          button(type="button" aria-label="cart").cart.header-top-navigation__cart
+header.catalog-header.header
+  include ../includes/header-top.pug 
   .header-bottom
     .search-wrapper
         input(type="search", name="Search field" placeholder="Search..").input-search.header-bottom__input-search
