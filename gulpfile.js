@@ -94,7 +94,7 @@ gulp.task('copy:img', function() {
 
 
 
-gulp.task('server', gulp.series('clean:build', gulp.parallel('scss', 'pug', 'copy:js', 'copy:libs', 'copy:img'), function() {
+gulp.task('serve', gulp.series('clean:build', gulp.parallel('scss', 'pug', 'copy:js', 'copy:libs', 'copy:img'), function() {
     browserSync.init({
       server: {
         baseDir: './build/'
@@ -106,9 +106,8 @@ gulp.task('server', gulp.series('clean:build', gulp.parallel('scss', 'pug', 'cop
     gulp.watch('src/js/**/*.js', gulp.series('copy:js'));
     gulp.watch('src/libs/**/*', gulp.series('copy:libs'));
     gulp.watch('src/img/**/*', gulp.series('copy:img'));
-
 }));
 
 
 
-gulp.task('default', gulp.series(['server']));
+gulp.task('default', gulp.series(['serve']));
