@@ -108,6 +108,10 @@ gulp.task('serve', gulp.series('clean:build', gulp.parallel('scss', 'pug', 'copy
     gulp.watch('src/img/**/*', gulp.series('copy:img'));
 }));
 
+gulp.task('build', gulp.series('scss', 'pug', 'copy:js', 'copy:libs', 'copy:img'), function() {
+    // content
+});
+
 
 
 gulp.task('default', gulp.series(['serve']));

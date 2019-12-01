@@ -5,3 +5,7 @@ Install dependencies:
 Run server:
 
     gulp serve
+
+Run build:
+
+    gulp build
