@@ -35,10 +35,10 @@ gulp.task('scss', function() {
     overrideBrowserslist: ['last 3 versions'],
     cascade: false
   }))
-  .pipe(sourcemaps.write())
   .pipe(gulp.dest('./build/css'))
   .pipe(csso())
   .pipe(rename('main.min.css'))
+  .pipe(sourcemaps.write())
   .pipe(gulp.dest('./build/css'))
   .pipe(browserSync.stream());
 });

@@ -31,3 +31,24 @@
   }
 }
 
+.section__bottom {
+  display: none;
+}
+
+@media (max-width: 1366px) {
+  .section {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section__bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+  }  
+  .section__top-anchor {
+    display: none;
+  }
+}

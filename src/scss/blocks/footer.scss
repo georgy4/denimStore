@@ -42,3 +42,13 @@
     transform: scale(1.1);
   }
 }
+
+@media (max-width: 767px) {
+  .footer__navigation-list {
+    display: block;
+    margin: 35px 0;
+  }  
+  .footer__navigation-item {
+    margin: 5px 0;
+  }  
+}

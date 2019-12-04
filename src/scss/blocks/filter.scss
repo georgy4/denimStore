@@ -9,7 +9,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 3;
+  z-index: 2;
 
   width: 243px;
 
@@ -17,17 +17,35 @@
   background: white;
 }
 
-.filter__item {
+.filter__list {
   width: 100%;
   height: auto;
   overflow: hidden;
+  transition: height 0.2s linear;
+}
+
+.filter__list--hidden {
+  height: 0px;
+}
+
+.filter__item {
+  width: 100%;
+  height: auto;
   border-bottom: 2px solid $background-grey;
-  &:nth-child(2) {
+  &:nth-child(1) {
     border-top: 2px solid $black;
   }
   &:last-child {
     margin-bottom: 40px;
   }
+}
+
+.filter__item-inner {
+  display: block;
+}
+
+.filter__item-inner--hidden {
+  display: none;
 }
 
 .filter__button--no-bg {
@@ -41,6 +59,7 @@
   -webkit-appearance: none;
   border: none;
   background-color: white;
+  outline: none;
 }
 
 .filter__button-angle {
@@ -60,7 +79,8 @@
 
 // slider
 .filter__slider {
-  width: 207px;
+  z-index: 3;
+  width: 177px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;

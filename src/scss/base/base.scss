@@ -45,3 +45,9 @@ ul {
 .page-main {
   overflow: hidden;
 }
+
+@media (max-width: 1366px) {
+  .last-section {
+    padding-bottom: 100px;
+  }
+}
