@@ -31,4 +31,11 @@
     width: 100%;
     margin: 0;
   }
+  @media (max-width: 1366px) {
+  }
+  @media (max-width: 767px) {
+    .products-catalog {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }

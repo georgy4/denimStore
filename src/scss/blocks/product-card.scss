@@ -40,14 +40,13 @@
 }
 
 @media (max-width: 1366px) {
+}
+
+@media (max-width: 767px) {
   .product-list__list-item {
     width: calc(100%/2 - 15px);
     &:nth-child(2n) {
       margin-right: 0;
     }
   }  
-}
-
-@media (max-width: 767px) {
-  
 }

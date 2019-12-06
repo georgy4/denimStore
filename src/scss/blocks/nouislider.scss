@@ -110,6 +110,12 @@
    right: -17px;
    left: 12px;
  }
+ @media (max-width: 767px) {
+  html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
+    right: -17px;
+    left: 100%;
+  }
+ }
  /* Styling;
   * Giving the connect element a border radius causes issues with using transform: scale
   */

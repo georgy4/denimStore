@@ -1,10 +1,15 @@
 .filter-wrapper
   .filter
+    //- mobile and other filter head
     .filter__head
-      button(tabindex=-1, 
-      onclick="document.querySelector('.filter__list').classList.toggle('filter__list--hidden');").filter__button--no-bg.filter__button-top
+      button(tabindex=-1).filter__button--no-bg.filter__button-top
         h3.filter__button-text  Filter by
         .filter__button-angle
+    //- mobile filter head when filter is open
+    .filter__head--mobile.dn
+      button.button--mobile Clear all
+      h1.short-title Filters
+      button.button--mobile.button-close-filter Close
 
     ul.filter__list.filter__list--hidden 
       li.filter__item 

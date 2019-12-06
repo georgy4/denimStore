@@ -138,3 +138,28 @@
   color: $black;
 }
 
+@media (max-width: 1366px) {
+}
+@media (max-width: 767px) {
+  .product-card {
+    display: block;
+  }
+  .gallery__thumbnails {
+    display: none;
+  }
+  .gallery__main-inner {
+    margin-bottom: 40px;
+  }
+  .gallery {
+    padding-right: 0;
+  }
+  .product-info {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .product-info::after {
+    left: -20%;
+    width: 150%;
+    z-index: -1;
+  }
+}

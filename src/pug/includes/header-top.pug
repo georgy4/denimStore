@@ -3,7 +3,9 @@
 .header-top
   .container
     nav.header-top-navigation
-      ul.header-top-navigation__list
+      button.hamburger.header-top-navigation__hamburger
+        .hamburger__line
+      ul(aria-label="navigation").header-top-navigation__list.header-top-navigation__list--hidden
         li.header-top-navigation__list-item
           a.header-top-navigation__anchor(href="catalog.html") Woman
         li.header-top-navigation__list-item
