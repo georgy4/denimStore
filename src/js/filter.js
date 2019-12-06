@@ -5,6 +5,7 @@ let filterHeadMob = document.querySelector('.filter__head--mobile');
 let filter = document.querySelector('.filter');
 let filtersList = document.querySelector('.filter__list');
 let buttonCloseFilter = document.querySelector('.button-close-filter');
+let filterModal = document.querySelector('.filter-modal');
 
 filterHeadButton.addEventListener('click', function(){
   // open/close filters list
@@ -15,6 +16,9 @@ filterHeadButton.addEventListener('click', function(){
     filterHeadButton.classList.toggle('dn');
     filterHeadMob.classList.toggle('dn');
   }
+  if (window.screen.width>=768) {
+    filterModal.style.display = 'block';
+  }
 });
 
 buttonCloseFilter.addEventListener('click', function(){
@@ -24,3 +28,7 @@ buttonCloseFilter.addEventListener('click', function(){
   filtersList.classList.toggle('filter__list--hidden');
 });
 
+filterModal.addEventListener('click', function(){
+  filterModal.style.display = 'none';
+  filtersList.classList.add('filter__list--hidden');
+});

@@ -121,21 +121,24 @@
 }
 
 .product-info__option-title {
+  margin-top: 30px;
   font-weight: 500;
   font-size: 18px;
-  color: $black
+  color: $black;
 }
 
 .description {
   font-weight: normal;
   font-size: 16px;
   color: $black;
+  margin-top: 20px;
 }
 
 .product-info__price {
   font-weight: bold;
   font-size: 18px;
   color: $black;
+  margin: 30px 0;
 }
 
 @media (max-width: 1366px) {
