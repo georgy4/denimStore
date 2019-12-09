@@ -56,6 +56,11 @@
   }
 }
 
+.cart-content__product-color  {
+  display: flex;
+  align-items: center;
+}
+
 .cart-content__product-size {
   font-size: 18px;
   color: $black;
@@ -143,5 +148,13 @@ select {
   }
   .summary__payments-img {
     width: 200px;
+  }
+  .cart-content-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cart-content__product-size {
+    margin: 5px 0;
   }
 }
