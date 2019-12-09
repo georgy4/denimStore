@@ -8,13 +8,8 @@
         a(href="product.html")
           p.cart-content__product-name Комбинезон
         .cart-content-bottom
-          p.cart-content__product-color 
-            label(for="color") Color:
-            select(name="color" id="color")
-              option 1
-              option 2
-              option 3
-              option 4
+          p.cart-content__product-color Color:
+            .cart-content__colors-item.colors-list__item.colors-list__item--active
 
           p.cart-content__product-size
             label(for="size") Size:
@@ -23,6 +18,8 @@
               option S
               option M
               option L
+              option XL
+              option XXL
 
           p.product-quantity
             label(for="quantity") Quantity:

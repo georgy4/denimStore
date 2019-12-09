@@ -1,7 +1,6 @@
 .cart-wraper {
   display: flex;
   width: 100%;
-  
 }
 
 .cart-content {
@@ -28,7 +27,7 @@
 
 .cart-content-bottom {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   padding-top: 20px;
   border-top: 1px solid $grey;
 }
@@ -69,6 +68,11 @@ select {
   border: 1px solid $grey;
   border-radius: 0;
   background: none;
+}
+
+.cart-content__colors-item {
+  margin: 0 10px;
+  flex-shrink: 0;
 }
 
 // summary style
@@ -118,4 +122,26 @@ select {
   height: auto;
   display: block;
   margin-top: 10px;
+}
+
+
+@media (max-width: 1366px) {
+}
+
+@media (max-width: 767px) {
+  .cart-wraper {
+    display: block;
+  }
+  .cart-content {
+    width: 100%;
+    margin-right: 0;
+  }
+  .summary {
+    width: 100%;
+    margin-top: 40px;
+    border: none;
+  }
+  .summary__payments-img {
+    width: 200px;
+  }
 }
