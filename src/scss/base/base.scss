@@ -1,6 +1,8 @@
 // основные базовые стили страницы
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0; 
   box-sizing: border-box;
@@ -12,6 +14,13 @@ html {
   scroll-behavior: smooth;
 }
 
+
+body {
+  // min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+}
 // font-family: 'Anton', sans-serif;
 // font-family: 'Work Sans', sans-serif;
 

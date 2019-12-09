@@ -1,0 +1,44 @@
+.cart-wraper.section.last-section
+  ul(aria-label="Products in cart").cart-content
+    li.cart-content__item
+      a(href="product.html")
+        img.cart-content__img(src="img/2.jpg", alt="")
+      .cart-content__product-info
+        p.cart-content__price $ 125
+        a(href="product.html")
+          p.cart-content__product-name Комбинезон
+        .cart-content-bottom
+          p.cart-content__product-color 
+            label(for="color") Color:
+            select(name="color" id="color")
+              option 1
+              option 2
+              option 3
+              option 4
+
+          p.cart-content__product-size
+            label(for="size") Size:
+            select(name="size" id="size")
+              option XS
+              option S
+              option M
+              option L
+
+          p.product-quantity
+            label(for="quantity") Quantity:
+            select(name="quantity" id="quantity")
+              option 1
+              option 2
+              option 3
+              option 4
+      button.remove
+
+  aside.summary
+    h2.summary__title Total
+    p.summary__total-price Sub-total: 
+      span.price $ 250
+    p.summary__delivery Delivery:
+      span.delivery-info Free shipping
+    button.button.summary__button Checkout
+    .summary__payments-accept We accept:
+      img.summary__payments-img(src="img/visa.png", alt="")

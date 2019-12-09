@@ -12,13 +12,13 @@ filterHeadButton.addEventListener('click', function(){
   filtersList.classList.toggle('filter__list--hidden');
   // add/remove class that makes a filter fullscreen, available only on mobile width screen
   filter.classList.toggle('filter-active--mobile');
+  // different filter conditions depending on screen width
   if (window.screen.width<=767) {
     filterHeadButton.classList.toggle('dn');
     filterHeadMob.classList.toggle('dn');
-  }
-  if (window.screen.width>=768) {
-    filterModal.style.display = 'block';
-  }
+  } else if (window.screen.width>=768) {
+      filterModal.style.display = 'block';
+    }
 });
 
 buttonCloseFilter.addEventListener('click', function(){

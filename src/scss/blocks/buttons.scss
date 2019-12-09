@@ -80,3 +80,18 @@
   bottom: 8px;
   left: 0;
 }
+
+// cart button remove
+
+.remove {
+  display: block;
+  width: 20px;
+  height: 20px;
+  -webkit-appearance:none;
+  border: none;
+  background: none;
+  background-image: url("../img/icons/close-button.svg");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+}

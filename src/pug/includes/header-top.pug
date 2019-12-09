@@ -17,4 +17,5 @@
       .header-top-navigation__right
         button(type="button" aria-label="search" 
         onclick="document.querySelector('.input-search').focus()").search.header-top-navigation__search
-        button(type="button" aria-label="cart").cart.header-top-navigation__cart
+        a(href="cart.html").cart__anchor
+          button(type="button" aria-label="cart").cart.header-top-navigation__cart

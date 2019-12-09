@@ -1,0 +1,10 @@
+extends ../layouts/layout
+
+block variables
+  -var title = 'Cart'
+block content
+  include ../includes/header-top.pug
+  main.page-main
+    .container
+      include ../includes/cart-page-content.pug
+  include ../includes/footer.pug
