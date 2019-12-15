@@ -1,6 +1,7 @@
 .cart-wraper.section.last-section
   ul(aria-label="Products in cart").cart-content
-    li.cart-content__item
+    <product-item-in-cart @update-total-price="getTotalPrice(index)" ref="product" v-for="(item, index) in products" :itemname="item.itemName" :key="item.itemId" :itempage="item.itemPage" :itemimg="item.itemImg" :itemprice="item.ItemPrice" :sizes="item.sizes" :itemsleft="item.itemsLeft"></product-item-in-cart>
+    //- li.cart-content__item
       a(href="product.html")
         img.cart-content__img(src="img/2.jpg", alt="")
       .cart-content__product-info
@@ -33,10 +34,12 @@
 
   aside.summary
     h2.summary__title Total
-    p.summary__total-price Sub-total: 
-      span.price $ 250
     p.summary__delivery Delivery:
-      span.delivery-info Free shipping
+      span(v-if="premium").delivery-info Free shipping
+      span(v-else).delivery-info $ {{delivery}}
+
+    p.summary__total-price Sub-total: 
+      span.price $ {{ totalPrice }}
     button.button.summary__button Checkout
     .summary__payments-accept We accept:
       img.summary__payments-img(src="img/visa.png", alt="")

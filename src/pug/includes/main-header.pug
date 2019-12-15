@@ -1,6 +1,7 @@
 header.main-header.header
-  .search-wrapper
-    input(type="search", name="Search field" placeholder="Search..").input-search.header-bottom__input-search
+  //- .search-wrapper
+  //-   input(type="search", name="Search field" placeholder="Search.." ref="searchInput").input-search.header-bottom__input-search
+  <search-component ref="searchComponent"></search-component>
   .header-top
     a(href="").logo.main-header__logo.logo--black Nîmes
   .header-bottom
@@ -18,11 +19,11 @@ header.main-header.header
 
           .header-navigation__right
             button(type="button" aria-label="search" 
-            onclick="document.querySelector('.input-search').focus()").search.header-navigation__search
+            @click="focusSearch").search.header-navigation__search
             a(href="cart.html").cart__anchor
               button(type="button" aria-label="cart").cart.header-navigation__cart
 
-          button(type="button" aria-label="to bottom").header-navigation__to-bottom.to-bottom
+          button(type="button" aria-label="to bottom" @click="toBottom").header-navigation__to-bottom.to-bottom
 
           ul.header-navigation__socials
             li.header-navigation__social-item

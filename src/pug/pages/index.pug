@@ -3,14 +3,16 @@ extends ../layouts/layout
 block variables
   -var title = 'main'
 block content
-  include ../includes/main-header.pug
-  main.page-main
-    .container
-      include ../includes/bestsellers-section.pug
-      include ../includes/season-offer-section.pug
-      include ../includes/categories-section.pug
-  include ../includes/footer.pug
+  #app
+    include ../includes/main-header.pug
+    main.page-main
+      .container
+        include ../includes/bestsellers-section.pug
+        include ../includes/season-offer-section.pug
+        include ../includes/categories-section.pug
+    include ../includes/footer.pug
 block scripts
-  script(src="js/scroll.js")
-     
+  script(src="js/components/searchComponent.js")
+  script(src="js/main-page.js")
+      
    
